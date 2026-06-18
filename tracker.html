@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>💸 Expense Tracker</h1>
+
+<input type="number" id="budget" placeholder="Set Monthly Budget">
+<div id="budgetAlert"></div>
+
+<input type="text" id="title" placeholder="Expense Title">
+<p id="titleError" style="color:red;"></p>
+
+<input type="number" id="amount" placeholder="Expense Amount">
+
+<select id="category">
+<option>Food & Dining</option>
+<option>Travel & Transport</option>
+<option>Shopping</option>
+<option>Entertainment</option>
+<option>Education</option>
+<option>Healthcare</option>
+<option>Rent & Utilities</option>
+<option>Others</option>
+</select>
+
+<button onclick="addExpense()">➕ Add / Update</button>
+<button onclick="resetData()">🗑 Reset</button>
+<button onclick="goToAnalysis()">📊 Analysis</button>
+
+<hr>
+
+<input type="text" id="searchTitle" placeholder="Search" onkeyup="applyFilters()">
+
+<select id="filterCategory" onchange="applyFilters()">
+<option value="All">All</option>
+<option>Food & Dining</option>
+<option>Travel & Transport</option>
+<option>Shopping</option>
+<option>Entertainment</option>
+<option>Education</option>
+<option>Healthcare</option>
+<option>Rent & Utilities</option>
+<option>Others</option>
+</select>
+
+<ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
