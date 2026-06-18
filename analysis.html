@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Analysis</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>📊 Analytics Dashboard</h1>
+
+<div class="card">Total: <span id="total"></span></div>
+<div class="card">Highest: <span id="high"></span></div>
+<div class="card">Lowest: <span id="low"></span></div>
+<div class="card">Average: <span id="avg"></span></div>
+
+<h3>Category Chart</h3>
+<canvas id="chart"></canvas>
+
+<button onclick="window.location.href='tracker.html'">⬅ Back</button>
+
+</div>
+
+<script src="analysis.js"></script>
+</body>
+</html>
