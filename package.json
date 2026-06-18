@@ -1,0 +1,22 @@
+{
+  "name": "smart-expense-management-system",
+  "version": "1.0.0",
+  "description": "Smart Expense Management & Analytics System using HTML, CSS, JavaScript, Node.js and Express.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "expense tracker",
+    "analytics",
+    "nodejs",
+    "express",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
